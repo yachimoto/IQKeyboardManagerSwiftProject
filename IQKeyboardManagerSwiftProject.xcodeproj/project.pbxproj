@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A0A698F96BD56240A58A35 /* Pods_IQKeyboardManagerSwiftProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E698CE9A2DFEC9EAEBFA4A88 /* Pods_IQKeyboardManagerSwiftProject.framework */; };
 		CEBDD38022EE86A5002E4B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDD37F22EE86A5002E4B30 /* AppDelegate.swift */; };
 		CEBDD38222EE86A5002E4B30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDD38122EE86A5002E4B30 /* ViewController.swift */; };
 		CEBDD38522EE86A5002E4B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBDD38322EE86A5002E4B30 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B3ADF5C08E877C18A5F5F2 /* Pods-IQKeyboardManagerSwiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardManagerSwiftProject.release.xcconfig"; path = "Target Support Files/Pods-IQKeyboardManagerSwiftProject/Pods-IQKeyboardManagerSwiftProject.release.xcconfig"; sourceTree = "<group>"; };
 		CEBDD37C22EE86A5002E4B30 /* IQKeyboardManagerSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IQKeyboardManagerSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBDD37F22EE86A5002E4B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBDD38122EE86A5002E4B30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		CEBDD38622EE86A8002E4B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBDD38922EE86A8002E4B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBDD38B22EE86A8002E4B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E698CE9A2DFEC9EAEBFA4A88 /* Pods_IQKeyboardManagerSwiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IQKeyboardManagerSwiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA75D5EC44ADD72F001AB7DC /* Pods-IQKeyboardManagerSwiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQKeyboardManagerSwiftProject.debug.xcconfig"; path = "Target Support Files/Pods-IQKeyboardManagerSwiftProject/Pods-IQKeyboardManagerSwiftProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A0A698F96BD56240A58A35 /* Pods_IQKeyboardManagerSwiftProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11D3BB73DEF4EC0BA8E7AA4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E698CE9A2DFEC9EAEBFA4A88 /* Pods_IQKeyboardManagerSwiftProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		942214426847657F63414A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA75D5EC44ADD72F001AB7DC /* Pods-IQKeyboardManagerSwiftProject.debug.xcconfig */,
+				01B3ADF5C08E877C18A5F5F2 /* Pods-IQKeyboardManagerSwiftProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEBDD37322EE86A5002E4B30 = {
 			isa = PBXGroup;
 			children = (
 				CEBDD37E22EE86A5002E4B30 /* IQKeyboardManagerSwiftProject */,
 				CEBDD37D22EE86A5002E4B30 /* Products */,
+				942214426847657F63414A17 /* Pods */,
+				11D3BB73DEF4EC0BA8E7AA4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEBDD38E22EE86A8002E4B30 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwiftProject" */;
 			buildPhases = (
+				B88A9282DA98C8DAE0FA3B98 /* [CP] Check Pods Manifest.lock */,
 				CEBDD37822EE86A5002E4B30 /* Sources */,
 				CEBDD37922EE86A5002E4B30 /* Frameworks */,
 				CEBDD37A22EE86A5002E4B30 /* Resources */,
+				001BC4CE56C3B3A503FFDB1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		001BC4CE56C3B3A503FFDB1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IQKeyboardManagerSwiftProject/Pods-IQKeyboardManagerSwiftProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IQKeyboardManagerSwiftProject/Pods-IQKeyboardManagerSwiftProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IQKeyboardManagerSwiftProject/Pods-IQKeyboardManagerSwiftProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88A9282DA98C8DAE0FA3B98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IQKeyboardManagerSwiftProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEBDD37822EE86A5002E4B30 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		CEBDD38F22EE86A8002E4B30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA75D5EC44ADD72F001AB7DC /* Pods-IQKeyboardManagerSwiftProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		CEBDD39022EE86A8002E4B30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B3ADF5C08E877C18A5F5F2 /* Pods-IQKeyboardManagerSwiftProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
